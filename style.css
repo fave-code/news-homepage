@@ -1,0 +1,115 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(36, 100%, 99%);
+    color: hsl(233, 8%, 79%);
+}
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+}
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+.hero-content h1 {
+    color: hsl(240, 100%, 5%);
+    font-size: 2.5rem;
+}
+.hero-content p {
+    margin:20px 0;
+}
+.hero-content button {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.hero-image .desktop-image {
+    display: block;
+    width: 100%;
+}
+.hero-image .mobile-image {
+    display: none;
+}
+@media (max-width:768px) {
+}
+.hero {
+    grid-template-columns: 1fr;
+}
+.hero-image .desktop-image {
+    display: none;
+}
+/* Sidebar */
+.news-sidebar {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 20px;
+}
+.news-sidebar h2 {
+    color: hsl(35, 77%, 62%);
+}
+.news-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.news-sidebar a {
+    text-decoration: none;
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+}
+/* Articles Section */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.articles img {
+    width: 100%;
+    border-radius: 5px;
+}
+.articles h3 {
+    color: hsl(5, 85%, 63%);
+    font-size: 2rem;
+}
+.articles h4 {
+    color: hsl(240, 100%, 5%);
+}
+.articles p {
+    margin: 10px 0;
+}
+.attribution {
+    text-align: center;
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+    margin-top: 20px;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+    color: hsl(228, 60%, 50%);
+}
+    
+
+
